@@ -1,0 +1,76 @@
+:root {
+  --color-fondo: #f4f7f9;
+  --color-texto: #1e293b;
+  --color-primario: #3b82f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--color-fondo);
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+
+main {
+  background-color: #ffffff;
+  width: 90%;
+  max-width: 800px;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  height: fit-content; /* Ajusta la altura al contenido */
+}
+
+.titulo-parrafo {
+  margin-bottom: 2rem;
+}
+
+h1 { color: var(--color-texto); margin-bottom: 0.5rem; }
+p { color: #64748b; }
+
+/* Estilos de la Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina el espacio entre bordes */
+  margin-top: 1rem;
+}
+
+th {
+  text-align: left;
+  padding: 1rem;
+  background-color: #f8fafc;
+  color: #475569;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--color-borde);
+}
+
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: var(--color-texto);
+}
+
+/* Estilo para los links */
+td a {
+  color: var(--color-primario);
+  text-decoration: none;
+}
+
+/* Estilo para el pie de tabla */
+tfoot td {
+  text-align: center;
+  font-weight: 600;
+  background-color: #f8fafc;
+  border: none;
+  padding: 1.5rem;
+}
