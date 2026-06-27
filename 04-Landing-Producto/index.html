@@ -4,47 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Teclado Appwise Ninja</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <header>
       <h1>Teclado Mecánico Appwise Ninja</h1>
-      <p>Escribe a la velocidad de la luz. Sin distracciones</p>
+      <p>Escribe a la velocidad de la luz. Sin distracciones.</p>
       <button>Comprar Ahora - $99</button>
     </header>
+
     <main>
-      <section>
+      <section class="video">
         <video src="./assets/promo.mp4" autoplay muted loop></video>
       </section>
-      <section>
+
+      <section class="modelos">
         <h2>Compara nuestros modelos</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Característica</th>
-              <th>Modelo Básico</th>
-              <th>Modelo Ninja (PRO)</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Switches (Interruptores)</td>
-              <td>Membrana</td>
-              <td>Mecánicos (Red Lineal)</td>
-            </tr>
-            <tr>
-              <td>Retroiluminación</td>
-              <td>Color Fijo</td>
-              <td>RGB Personalizable por tecla</td>
-            </tr>
-            <tr>
-              <td>Precio</td>
-              <td>$29.99</td>
-              <td>$99.99</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Característica</th>
+                <th>Modelo Básico</th>
+                <th>Modelo Ninja (PRO)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="caracteristica">Switches (Interruptores)</td>
+                <td>Membrana</td>
+                <td>Mecánicos (Red Lineal)</td>
+              </tr>
+              <tr>
+                <td class="caracteristica">Retroiluminación</td>
+                <td>Color Fijo</td>
+                <td>RGB Personalizable por tecla</td>
+              </tr>
+              <tr>
+                <td class="caracteristica">Precio</td>
+                <td>$29.99</td>
+                <td class="precio-destacado">$99.99</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
-      <section>
+
+      <section class="reseña">
         <h2>Mira la reseña completa</h2>
         <iframe
           width="560"
@@ -66,9 +72,14 @@
         ></iframe>
       </section>
     </main>
+
     <footer>
-      <a href="#">Terminos de Garantía</a>
-      <a href="#">Soporte Técnico</a>
+      <div class="enlaces-footer">
+        <a href="#">Términos de Garantía</a>
+        <span class="separador">|</span>
+        <a href="#">Soporte Técnico</a>
+      </div>
+      <p>&copy; 2024 Appwise Gear.</p>
     </footer>
   </body>
 </html>

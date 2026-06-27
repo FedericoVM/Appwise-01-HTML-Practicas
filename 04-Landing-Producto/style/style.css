@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+:root {
+  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+  --color-fondo: #f4f5f7;
+  --color-fondo-footer: #e9ecef;
+  --color-primario-oscuro: #212121;
+  --color-acento: #0078d4;
+  --color-acento-hover: #005a9e;
+  --color-blanco: #ffffff;
+  
+  /* Colores de Texto */
+  --color-texto-principal: #222222;
+  --color-texto-secundario: #555555;
+  --color-texto-claro: #cccccc;
+  --color-texto-footer: #888888;
+  --color-texto-separador: #aaaaaa;
+
+  /* Bordes y Sombras */
+  --color-borde: #eaeaea;
+  --sombra-suave: 0 4px 20px rgba(0, 0, 0, 0.05);
+  --sombra-fuerte: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fuente-principal);
+}
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto-principal);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-primario-oscuro);
+  color: var(--color-blanco);
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+header > h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+header > p {
+  color: var(--color-texto-claro);
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+header > button {
+  background-color: var(--color-acento);
+  color: var(--color-blanco);
+  border: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+header > button:hover {
+  background-color: var(--color-acento-hover);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 1rem;
+  gap: 5rem;
+}
+
+
+.video video {
+  max-width: 100%;
+  width: 800px;
+  border-radius: 12px;
+  box-shadow: var(--sombra-fuerte);
+}
+
+
+.modelos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 850px;
+}
+
+.modelos h2, .reseña h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--color-texto-principal);
+}
+
+.table-container {
+  width: 100%;
+  background-color: var(--color-blanco);
+  border-radius: 12px;
+  box-shadow: var(--sombra-suave);
+  overflow: hidden;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 1.5rem;
+  border: 1px solid var(--color-borde);
+}
+
+th {
+  font-weight: 600;
+  color: var(--color-texto-principal);
+  background-color: var(--color-blanco);
+}
+
+td.caracteristica {
+  text-align: left;
+  font-weight: 600;
+  color: var(--color-texto-principal);
+}
+
+td {
+  color: var(--color-texto-secundario);
+}
+
+.precio-destacado {
+  color: var(--color-acento);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+
+.reseña {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+
+footer {
+  background-color: var(--color-fondo-footer);
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: auto;
+}
+
+.enlaces-footer {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.enlaces-footer a {
+  text-decoration: none;
+  color: var(--color-texto-principal);
+  font-size: 0.95rem;
+}
+
+.enlaces-footer a:hover {
+  text-decoration: underline;
+}
+
+.separador {
+  color: var(--color-texto-separador);
+}
+
+footer p {
+  color: var(--color-texto-footer);
+  font-size: 0.9rem;
+}
