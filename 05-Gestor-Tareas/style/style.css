@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+:root {
+  --color-acento: #4285f4;
+  --color-alerta: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main > div {
+  background-color: white;
+  width: 480px;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+section.input-tareas {
+  display: flex;
+  gap: 0.8rem;
+}
+
+section.input-tareas input {
+  flex: 1;
+  padding: 0.8rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
+
+section.input-tareas button {
+  background-color: var(--color-acento);
+  color: white;
+  border: none;
+  padding: 0 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+section.input-tareas button:hover {
+  background-color: #7fb0ff;
+}
+
+section.lista-tareas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.lista-tareas ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+section.lista-tareas li {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  gap: 0.8rem;
+}
+
+section.lista-tareas li input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-acento);
+}
+
+section.lista-tareas li input:checked + span {
+  text-decoration: line-through;
+  color: #9ca3af;
+}
+
+section.lista-tareas li span {
+  flex: 1;
+}
+
+section.lista-tareas li button {
+  background: none;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+section.lista-tareas li button::after {
+  content: "✖";
+  font-size: 1rem;
+  color: #fca5a5;
+}
+
+section.lista-tareas hr {
+  width: 100%;
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+section.lista-tareas p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+section.lista-tareas > button {
+  background: none;
+  border: none;
+  color: var(--color-alerta);
+  cursor: pointer;
+}
+
+div.footer-tareas {
+  width: 100%;
+  margin-top: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+div.footer-tareas > button.btn-limpiar {
+  background: none;
+  border: none;
+  color: #ef4444;
+}
+
+div.footer-tareas > button.btn-limpiar:hover {
+  cursor: pointer;
+  color: #f37070;
+  text-decoration: underline;
+}
