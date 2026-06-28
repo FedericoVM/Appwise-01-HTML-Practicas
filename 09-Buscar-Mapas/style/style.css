@@ -1,0 +1,92 @@
+:root {
+  --color-borde: #e2e8f0;
+  --color-primario: #6366f1;
+  --color-texto: #1e293b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f8fafc;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+main section iframe {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+main aside {
+  width: 350px;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+main aside h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+}
+
+main aside ul {
+  list-style: none;
+}
+
+main aside ul li {
+  padding-bottom: 1rem;
+
+  border-bottom: 1px solid #e2e8f0;
+}
+
+main aside ul li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+main aside button,
+main aside a {
+  width: 7rem;
+  text-align: center;
+  display: block;
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e2e8f0;
+  color: var(--color-primario);
+  background: transparent;
+  border-radius: 6px;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+main aside button:hover,
+main aside a:hover {
+  background: var(--color-primario);
+  color: white;
+}
