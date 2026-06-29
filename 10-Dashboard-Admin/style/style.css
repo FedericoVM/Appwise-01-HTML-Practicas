@@ -1,0 +1,113 @@
+:root {
+  --color-sidebar: #0f172a;
+  --color-bg-main: #f8fafc;
+  --color-text-light: #ffffff;
+  --color-text-dark: #1e293b;
+  --color-accent: #3b82f6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--color-bg-main);
+}
+
+/* --- Aside (Menú Lateral) --- */
+aside {
+  width: 260px;
+  background-color: var(--color-sidebar);
+  color: var(--color-text-light);
+  padding: 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+aside h2 { font-size: 1.2rem; color: var(--color-accent); }
+
+details summary {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-weight: 600;
+  list-style: none;
+}
+
+.links-proyectos, .links-juegos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.5rem;
+  padding-left: 1rem;
+}
+
+.links-proyectos a, .links-juegos a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: 0.3s;
+}
+
+.links-proyectos a:hover { color: white; }
+
+.links-juegos a:hover {color: #3b82f6;}
+
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 1.5rem 2rem;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+header img {
+  width: 40px;      /* Tamaño estándar de avatar */
+  height: 40px;     /* Mismo alto que ancho para mantener proporción */
+  border-radius: 50%; /* Esto lo hace perfectamente circular */
+  object-fit: cover;  /* Asegura que la imagen no se deforme */
+  border: 2px solid var(--color-accent); /* Un borde decorativo para que resalte */
+}
+
+header input {
+  padding: 0.5rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.titulo-seccion { padding: 2rem 2rem 1rem; }
+
+/* Wrapper para el Iframe */
+.wrapper-inframe {
+  margin: 0 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+  height: 70vh; /* Ajusta según necesidad */
+  overflow: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}

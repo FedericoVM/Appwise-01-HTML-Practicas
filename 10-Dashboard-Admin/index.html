@@ -4,16 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Panel - Appwise</title>
+    <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <aside>
-      <h2>Appwise Admin</h2>
-      <ul>
-        <li><a href="#">Dashboard</a></li>
-        <li><a href="#">Usuarios</a></li>
-        <li><a href="#">Reportes</a></li>
-        <li><a href="#">Configuración</a></li>
-      </ul>
+      <h2>🚀 Appwise Admin</h2>
+      <div class="modal">
+        <details>
+          <summary>Proyectos</summary>
+          <div class="links-proyectos">
+            <a href="" data-url="">01. Receta de la abuela</a>
+            <a href="" data-url="">02. Blog Hacker</a>
+            <a href="" data-url="">03. Registro Usuario</a>
+            <a href="" data-url="">04. Landing Producto</a>
+            <a href="" data-url="">05. Gestor Tareas</a>
+            <a href="" data-url="">06. FAQ Acordeon</a>
+            <a href="" data-url="">07. Directorio Empleados</a>
+            <a href="" data-url="">08. Carrito Compras</a>
+            <a href="" data-url="">09. Buscar Mapas</a>
+            <a href="" data-url="">10. Reproductor de musica</a>
+          </div>
+        </details>
+        <details>
+          <summary>Juegos</summary>
+          <div class="links-juegos">
+            <a href="" data-url="">01. Piedra, Papel o Tijeras</a>
+            <a href="" data-url="">02. Oráculo</a>
+            <a href="" data-url="">03. Memotest</a>
+            <a href="" data-url="">04. Buscador Peliculas</a>
+            <a href="" data-url="">05. Whack a Model</a>
+            <a href="" data-url="">06. AppWise Clicker</a>
+            <a href="" data-url="">07. Auto Chocador</a>
+            <a href="" data-url="">08. Carrito Compras</a>
+            <a href="" data-url="">09. App Pong</a>
+          </div>
+        </details>
+      </div>
     </aside>
     <main>
       <header>
@@ -23,67 +49,23 @@
           <img src="./assets/avatar.png" alt="imagen_de_avatar" />
         </div>
       </header>
-      <section>
-        <h1>Resumen General</h1>
-        <article>
-          <h3>USUARIOS ACTIVOS</h3>
-          <p><strong>1,250</strong></p>
-          <span>+5% está semana</span>
-        </article>
-        <article>
-          <h3>VENTAS DEL MES</h3>
-          <p><strong>14,500</strong></p>
-          <span>+12% está semana</span>
-        </article>
-        <article>
-          <h3>TICKETS PENDIENTES</h3>
-          <p><strong>8</strong></p>
-          <span>Requiere atención</span>
-        </article>
+      <!-- Titulo y botones -->
+      <section class="titulo-seccion">
+        <h1>Proyecto</h1>
       </section>
-      <section>
-        <h3>Actividad reciente</h3>
-        <article>
-            <table>
-                <thead>
-                    <tr>
-                        <th>FECHA</th>
-                        <th>USUARIO</th>
-                        <th>ACCIÓN</th>
-                        <th>ESTADO</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>15 Oct, 10:30</td>
-                        <td><strong>carlos.dev</strong></td>
-                        <td>Subió un nuevo proyecto</td>
-                        <td>Completado</td>
-                    </tr>
-                     <tr>
-                        <td>15 Oct, 9:15</td>
-                        <td><strong>ana.ui</strong></td>
-                        <td>Actualizó perfil</td>
-                        <td>Completado</td>
-                    </tr> 
-                    <tr>
-                        <td>14 Oct, 18:45</td>
-                        <td>juan.perez</td>
-                        <td>Intento de pago</td>
-                        <td>Fallido</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+      <!-- Contenido principal -->
+      <section class="proyectos">
+        <div class="wrapper-inframe">
+          <iframe
+            src=""
+            frameborder="0"
+            title=""
+            loading="lazy"
+            allowfullscreen
+          >
+          </iframe>
+        </div>
       </section>
     </main>
-    <dialog open>
-        <h3>Añadir Nuevo Usuario</h3>
-        <form>
-            <input type="text" name="nombre" id="nombre" placeholder="Ingresar tu nombre...">
-            <button type="submit">Guardar</button>
-            <button type="button">Cancelar</button>
-        </form>
-    </dialog>
   </body>
 </html>
